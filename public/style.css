@@ -4,31 +4,34 @@
     box-sizing: border-box;
   }
   
+  body{
+    background:linear-gradient(to left,#e7e2e6,#b5b4ee);
+  }
+
   #chat {
     color: #220664;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 2vw;
+    padding: 1vw;
   }
   
   input {
     width: 60vw;
     border: 1px solid rgb(14, 13, 13);
-    height: 5vw;
+    height: 3vw;
     padding: 0 2vw;
     font-size: 1.5vw;
+    border-radius: 8px;
   }
   
   button {
     width: 60vw;
-    height: 5vw;
-    font-size: 1.5vw;
+    height: 3vw;
+    font-size: 1vw;
     background: rgb(21, 4, 95);
     text-align: center;
-    line-height: 5vw;
     font-weight: bold;
     color: #FFF;
     margin-top: 1vw;
@@ -36,20 +39,22 @@
   }
   
   .messages {
+    background: #FFF;
     overflow: scroll;
     width: 60vw;
     height: 30vh;
     margin: 2vw 0;
     border: 1px solid rgb(12, 12, 12);
     padding: 2vw;
+    border-radius: 10px;
   }
 
   #content{
-    margin: 0vh auto;
-    background: linear-gradient(to left,#e7e2e6,#b5b4ee);
+    margin: 5vh auto;
+    background:linear-gradient(to left,#FAF2F8,#E5DDE4 ) ;
     display: flex;
-    height: 100vh;
-    width: auto;
+    height: 90vh;
+    width: 80vw;
     align-items: center;
     justify-content: center;
     border: #2c292b solid 0px;
@@ -59,11 +64,11 @@
 
   h1{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 5vw;
-    padding: 2vw;
+    font-size: 3vw;
+    padding: 1.5vw;
   }
 
-  @media screen and (max-width:450px){
+  @media screen and (max-width:500px){
   .message{
     font-size: 3vw;
   }
@@ -89,6 +94,31 @@
     height: 10vw;
     padding: 0 2vw;
     font-size: 3vw;
+  }
+
+  button {
+    width: 60vw;
+    height: 5vw;
+    font-size: 3vw;
+    background: rgb(21, 4, 95);
+    text-align: center;
+    font-weight: bold;
+    color: #FFF;
+    margin-top: 2vw;
+    border-radius: 10px;
+  }
+
+  #content{
+    margin: 4vh auto;
+    background:linear-gradient(to left,#FAF2F8,#E5DDE4 ) ;
+    display: flex;
+    height: 90vh;
+    width: 80vw;
+    align-items: center;
+    justify-content: center;
+    border: #2c292b solid 0px;
+    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
   }
 
   }
