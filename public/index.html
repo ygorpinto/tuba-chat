@@ -52,6 +52,8 @@
                 renderMessage(messageObject);
 
                 socket.emit('sendMessage', messageObject);
+
+                document.querySelector('input[name=message]').value = ""
             }
         });
     </script>
