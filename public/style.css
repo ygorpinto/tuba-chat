@@ -5,7 +5,7 @@
   }
   
   #chat {
-    color: #8F086D;
+    color: #220664;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -26,7 +26,7 @@
     width: 60vw;
     height: 5vw;
     font-size: 1.5vw;
-    background: rgb(143, 8, 109);
+    background: rgb(21, 4, 95);
     text-align: center;
     line-height: 5vw;
     font-weight: bold;
@@ -42,6 +42,19 @@
     margin: 2vw 0;
     border: 1px solid rgb(12, 12, 12);
     padding: 2vw;
+  }
+
+  #content{
+    margin: 0vh auto;
+    background: linear-gradient(to left,#e7e2e6,#b5b4ee);
+    display: flex;
+    height: 100vh;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    border: #2c292b solid 0px;
+    box-shadow: 3px 3px 3px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
   }
 
   h1{
