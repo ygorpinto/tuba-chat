@@ -10,7 +10,7 @@ abrir a localhost:3000 😌
 
 ## ou clique abaixo para 👈
 
-[Abrir o Chat](http://tuba-chat.herokuapp.com/) em realtime sem ser no localhost. 👍👍👍
+[Abrir o Chat](https://tuba-chat.herokuapp.com/) em realtime sem ser no localhost. 👍👍👍
 
 Feito com ❤️ por Ygor Ferreira.
 
