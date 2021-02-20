@@ -27,7 +27,7 @@
         </form>
     </div>
     <script>
-        var socket = io('https://tuba-chat.herokuapp.com/');
+        var socket = io('http://tuba-chat.herokuapp.com/');
 
         function renderMessage(message) {
             $('.messages').append(`<div class="message"><strong>${message.author}</strong> :  ${message.message}</div>`);
