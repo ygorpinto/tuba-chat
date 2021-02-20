@@ -17,21 +17,23 @@
 </head>
 
 <body>
-    <form id="chat">
-        <h1>Tuba Chat</h1>
-        <input type="text" name="username" placeholder="Digite aqui seu nome">
-        <div class="messages"></div>
-        <input type="text" name="message" placeholder="Digite sua mensagem">
-        <button type="submit">Enviar</button>
-    </form>
+    <div id="content">
+        <form id="chat">
+            <h1>Tuba Chat</h1>
+            <input type="text" name="username" placeholder="Digite aqui seu nome">
+            <div class="messages"></div>
+            <input type="text" name="message" placeholder="Digite sua mensagem">
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
     <script>
-        var socket = io('http://tuba-chat.herokuapp.com/');
+        var socket = io('https://tuba-chat.herokuapp.com/');
 
         function renderMessage(message) {
             $('.messages').append(`<div class="message"><strong>${message.author}</strong> :  ${message.message}</div>`);
         }
 
-        socket.on('receivedMessage',function(message){
+        socket.on('receivedMessage', function (message) {
             renderMessage(message)
         });
 
@@ -50,6 +52,8 @@
                 renderMessage(messageObject);
 
                 socket.emit('sendMessage', messageObject);
+
+                document.querySelector('input[name=message]').value = ""
             }
         });
     </script>
